@@ -1,0 +1,116 @@
+.test-ocean .test-page {
+    padding-top:8px;
+    display:flex;
+    justify-content:center
+}
+.test-ocean .test-layout {
+    width:min(640px,100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px
+}
+.test-ocean .test-shell {
+    width:330px;
+    height:270px;
+    border-radius:50%;
+    padding:42px 53px 24px;
+    text-align:left;
+    background:rgba(214,239,246,.54)
+}
+.test-ocean .dolphin {
+    text-align:center;
+    font-size:14px;
+    color:#1985a8;
+    height:17px
+}
+.test-ocean .test-shell .page-title {
+    margin:0 0 7px
+}
+.test-ocean .test-shell .page-title h1 {
+    font:700 14px Georgia,serif;
+    color:#0a587b;
+    text-align:center;
+    margin:0 0 3px
+}
+.test-ocean .test-shell .page-title p {
+    font-size:6px;
+    text-align:center;
+    margin:0;
+    color:#244f62
+}
+.test-ocean .question-title {
+    font-size:7px;
+    font-weight:700;
+    color:#155a76;
+    margin:9px 0 5px
+}
+.test-ocean .answers {
+    display:grid;
+    gap:3px
+}
+.test-ocean .answer {
+    display:flex;
+    align-items:center;
+    gap:4px;
+    color:#3b6879;
+    font-size:6.5px;
+    cursor:pointer
+}
+.test-ocean .answer input {
+    margin:0;
+    accent-color:#2087a9
+}
+.test-ocean .test-actions {
+    display:flex;
+    justify-content:center;
+    margin-top:9px
+}
+.test-ocean .test-actions #prevBtn {
+    display:none
+}
+.test-ocean .test-actions .btn {
+    padding:5px 16px;
+    font-size:6px
+}
+.test-ocean .result {
+    display:none;
+    text-align:center;
+    font-size:8px
+}
+.test-ocean .result.show {
+    display:block
+}
+.test-ocean .recent-tests {
+    width:116px;
+    border-radius:9px;
+    padding:7px;
+    background:rgba(244,252,254,.78);
+    color:#3e6e80
+}
+.test-ocean .recent-tests h3 {
+    font-size:7px;
+    margin:0 0 3px;
+    color:#1a5c78
+}
+.test-ocean .recent-tests p {
+    font-size:6px;
+    margin:0 0 4px
+}
+.test-ocean .recent-tests label {
+    display:block;
+    font-size:5.5px;
+    padding:3px 0;
+    border-top:1px solid rgba(40,120,145,.14)
+}
+@media(max-width:620px) {
+    .test-ocean .test-layout {
+        flex-direction:column
+    }
+    .test-ocean .recent-tests {
+        width:330px
+    }
+    .test-ocean .test-shell {
+        width:min(330px,100%)
+    }
+}

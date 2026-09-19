@@ -1,0 +1,66 @@
+.consult-ocean .consult-page {
+    display:flex;
+    justify-content:center;
+    padding-top:32px
+}
+.consult-ocean .consult-card {
+    width:355px;
+    border-radius:16px;
+    padding:15px;
+    background:rgba(75,159,188,.43);
+    border-color:rgba(255,255,255,.55)
+}
+.consult-ocean .consult-card h1 {
+    font:700 17px Georgia,serif;
+    color:#fff;
+    text-align:center;
+    margin:0 0 13px;
+    text-shadow:0 2px 7px rgba(0,50,70,.22)
+}
+.consult-ocean .consult-card label {
+    display:block;
+    color:#fff;
+    font-size:7px;
+    font-weight:700;
+    margin-bottom:7px
+}
+.consult-ocean .consult-card input,.consult-ocean .consult-card select,.consult-ocean .consult-card textarea {
+    display:block;
+    width:100%;
+    margin-top:4px;
+    border:1px solid rgba(255,255,255,.55);
+    border-radius:9px;
+    padding:7px 8px;
+    background:rgba(205,236,242,.35);
+    color:#285e73;
+    outline:0;
+    font:600 7px "Segoe UI",Arial,sans-serif
+}
+.consult-ocean .consult-card textarea {
+    min-height:80px;
+    resize:vertical
+}
+.consult-ocean .row {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:7px
+}
+.consult-ocean .consult-card .btn {
+    width:100%;
+    padding:7px;
+    font-size:7px
+}
+.consult-ocean .message {
+    text-align:center;
+    font-size:7px;
+    color:#eafaff;
+    margin-top:6px
+}
+@media(max-width:420px) {
+    .consult-ocean .consult-card {
+        width:100%
+    }
+    .consult-ocean .row {
+        grid-template-columns:1fr
+    }
+}
